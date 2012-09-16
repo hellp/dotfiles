@@ -28,6 +28,7 @@
 	recon = rebase --continue
 	reha = reset --hard
 	s = status
+	ss = status -s
 	sm = submodule
 	st = status
 	# Undo a `git push`
