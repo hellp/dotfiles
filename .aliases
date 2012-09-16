@@ -18,6 +18,9 @@ alias suvi="sudo vim"
 alias v="vim"
 alias servedir="python -m SimpleHTTPServer 8999"
 
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
