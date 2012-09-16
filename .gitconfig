@@ -64,6 +64,7 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
@@ -86,3 +87,6 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+
+[rerere]
+	enabled = 1
