@@ -25,9 +25,11 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 function parse_git_dirty() {
-	git branch >/dev/null 2>&1 && [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
-	# Alternative implementation that ignores unknown files:
-	#[[ $(git status --short 2>/dev/null | cut -b 1-2 | grep -v "^??" | wc -l) -ge 1 ]] && echo "*"
+	git_status=$(git status --short 2>/dev/null | cut -b 1-2)
+	# Files have changed -> *
+	[[ -n `echo "$git_status" | grep -v "^??"` ]] && echo -n "*"
+	# Unknown files in working dir -> ?
+	[[ -n `echo "$git_status" | grep "^??"` ]] && echo -n "?"
 }
 
 function parse_git_branch() {
