@@ -1,8 +1,6 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
-git pull
-
 # The basic rsync copy helper function by Mathias
 function do_rsync() {
 	rsync\
