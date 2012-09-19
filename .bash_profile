@@ -39,3 +39,6 @@ export LANGUAGE="en_US"
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 	. /etc/bash_completion
 fi
+
+# z (https://github.com/rupa/z)
+[ -f ~/src/z/z.sh ] && source ~/src/z/z.sh
