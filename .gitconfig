@@ -52,14 +52,15 @@
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+	current = green reverse
+	local = green
+	remote = blue
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+	commit = yellow reverse
+	meta = blue
+	frag = magenta
+	old = red
+	new = green
 [color "status"]
 	added = green
 	updated = yellow
