@@ -1,2 +1,3 @@
 # Automatically normalize line endings for all text-based files
-* text=auto
+# *Disabled*. Actually pretty bad when working with thirdparty JS libs.
+# * text=auto
