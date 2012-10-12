@@ -1,6 +1,11 @@
 # Compiled Python files
 *.pyc
 
+# Common buildout artifacts
+*.egg-info/
+.installed.cfg
+develop-eggs/
+
 # Folder view configuration files
 .DS_Store
 Desktop.ini
