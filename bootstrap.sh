@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 function do_rsync() {
 	rsync\
 		--backup --backup-dir ".dotfiles-bak"\
+		--checksum\
 		--exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh"\
 		--exclude "README.md" --exclude "init/" \
 		-av . ~
