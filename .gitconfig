@@ -27,10 +27,10 @@
 	rebi = "!r() { git rebase -i HEAD~$1; }; r"
 	recon = rebase --continue
 	reha = reset --hard
-	s = status
-	ss = status -s
+	s = status -sb
+	ss = status -sb
 	sm = submodule
-	st = status
+	st = status -sb
 	# Undo a `git push`
 	undopush = push -f origin HEAD^:master
 
