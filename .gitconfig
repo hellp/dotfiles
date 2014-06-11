@@ -45,6 +45,9 @@
 	# Treat spaces before tabs, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,trailing-space
 
+	# https://stackoverflow.com/questions/18257622/why-is-git-core-preloadindex-default-value-false/18259086
+	preloadindex = true
+
 [diff]
 	renames = true
 
